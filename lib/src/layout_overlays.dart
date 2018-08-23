@@ -155,7 +155,7 @@ class _OverlayBuilderState extends State<OverlayBuilder> {
   }
 
   void buildOverlay() async {
-    overlayEntry?.markNeedsBuild();
+    Future.delayed(() => overlayEntry?.markNeedsBuild());
   }
 
   @override
